@@ -10,10 +10,10 @@ class Nav extends HTMLElement {
       <a class="logo" href="index.html"><img class="logo" src="img/logoWithText.png"></a>
       <div id="navigation">
         <div id="social-icons">
-        <a href="https://www.facebook.com/KiroNilsson/"><img src="/img/facebook-svgrepo-com.svg"></a>
-        <a href="https://www.instagram.com/kironilsson/"><img src="/img/instagram-svgrepo-com.svg"></a>
-        <a href="https://www.linkedin.com/company/centro-quiropr-ctico-nilsson/"><img src="/img/linkedin_icon.svg"></a>
-        <a href="https://twitter.com/KiroNilsson"><img src="/img/x-logo-black.svg"></a>
+        <a href="https://www.facebook.com/KiroNilsson/" target="_blank"><img src="/img/facebook-svgrepo-com.svg"></a>
+        <a href="https://www.instagram.com/kironilsson/" target="_blank"><img src="/img/instagram-svgrepo-com.svg"></a>
+        <a href="https://www.linkedin.com/company/centro-quiropr-ctico-nilsson/" target="_blank"><img src="/img/linkedin_icon.svg"></a>
+        <a href="https://twitter.com/KiroNilsson" target="_blank"><img src="/img/x-logo-black.svg"></a>
       </div>
       <div class="nav-items">
       
@@ -67,7 +67,10 @@ class Nav extends HTMLElement {
   }
 }
 
+
 customElements.define("nav-component", Nav);
+
+
 
 // Footer component
 

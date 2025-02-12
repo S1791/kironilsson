@@ -1,4 +1,5 @@
 {
   "livePreview.defaultPreviewPath": "/index.html",
-  "liveServer.settings.multiRootWorkspaceName": "kironilsson"
+  "liveServer.settings.multiRootWorkspaceName": "kironilsson",
+  "liveServer.settings.port": 4041
 }

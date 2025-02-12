@@ -34,37 +34,38 @@ p {
 }
 
 h1 {
-  font-size: 3.6vw;
+  font-size: clamp(1rem, -0.3299rem + 4.9485vw, 3rem);
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: clamp(1rem, -0.3299rem + 4.9485vw, 2.6rem);
 }
 
 p,
 q {
-  font-size: 2.4vw;
+  font-size: clamp(1rem, 0.569rem + 0.8979vw, 2rem);
+  /* font-size: clamp(1rem, -0.3299rem + 4.9485vw, 2.2rem); */
   line-height: 140%;
 }
 
 body {
   /* min-width: 800px; */
-  max-width: 1376px;
+  /* max-width: 1376px; */
   /* max-width: 20%; */
   display: flex;
   flex-direction: column;
   margin: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-header,
+nav, header,
 main,
 section {
   display: flex;
   flex-direction: column;
   
   justify-content: center;
-  padding: 20px 6%;
+  padding: 20px 15%;
   
   
 }
@@ -81,13 +82,14 @@ header h1 {
 }
 
 nav {
-  width: auto;
+  /* width: 100%; */
   align-items: center;
   position: sticky;
   top: 0;
   background-color: white;
   border-bottom: 0.5px solid #030303;
   z-index: 100;
+  /* padding: 0 25%; */
 }
 
 button.accordion {
@@ -122,13 +124,14 @@ button.accordion {
 }
 
 .navbar {
+  /* width: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* font-size: 1.6rem; */
   overflow: hidden;
   /* background-color: #333; */
-  padding: 0 6%;
+  /* padding: 0 6%; */
   align-items: center;
   height: 100px;
 }
@@ -517,6 +520,8 @@ button.accordion {
 
 /* slideshow css end */
 
+/* #region MQ_tablet */
+
 @media only screen and (max-width: 768px) {
   body {
     width: auto;
@@ -565,6 +570,10 @@ button.accordion {
 /* end footer css */
 
 }
+
+/* #endregion */
+
+/* #region MQ_Phone */
 
 @media only screen and (max-width: 430px) {
   body {
@@ -696,3 +705,5 @@ button.accordion {
 
   /* footer css end */
 }
+
+/* #endregion */
