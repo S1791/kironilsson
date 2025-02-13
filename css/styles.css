@@ -79,7 +79,7 @@ header {
 header h1 {
   /* font-size: clamp(16px, calc(20px + (36–20) * (100vw - 768px)/(1920–768)), 48px); */
   /* font-size: 4vw; */
-  font-size: clamp(1rem, 0.1134rem + 3.299vw, 4rem);
+  /* font-size: clamp(1rem, 0.1134rem + 3.299vw, 4rem); */
 }
 
 nav {
@@ -278,7 +278,8 @@ button.accordion {
   width: max-content;
 }
 
-/* footer css */
+/* MARK: Footer css
+*/
 
 
 .footer-items {
@@ -317,11 +318,10 @@ button.accordion {
 
 .footer-link img {
   padding: 5px 0;
-  height: 80px;
+  height: 40px;
   width: auto;
   width: fit-content;
   align-self: center;
-  
 }
 
 .footer-contacts,
@@ -407,7 +407,8 @@ button.accordion {
 }
 
 
-/* slideshow css */
+/* MARK: Slideshow css
+*/
 
 /* Slideshow container */
 
@@ -479,6 +480,7 @@ button.accordion {
 }
 
 /* Number text (1/3 etc) */
+
 .numbertext {
   color: var(--blue);
   font-size: 12px;
@@ -488,6 +490,7 @@ button.accordion {
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -505,6 +508,7 @@ button.accordion {
 }
 
 /* Fading animation */
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -519,9 +523,8 @@ button.accordion {
   }
 }
 
-/* slideshow css end */
-
-/* #region MQ_tablet */
+/* MARK: MQ 768 px
+*/
 
 @media only screen and (max-width: 768px) {
   body {
@@ -531,10 +534,9 @@ button.accordion {
 
 /* navigation css */
 
-
-
   .navbar .logo {
     height: 50px;
+
   }
 
   .nav-items {
@@ -546,6 +548,7 @@ button.accordion {
   .navbar a,
   .dropdown .dropbtn {
     font-size: inherit;
+
   }
 
   /* footer css */
@@ -557,6 +560,7 @@ button.accordion {
 
   .footer-link img {
     height: 40px;
+    width: auto;
   }
 
   .footer-links {
@@ -574,7 +578,8 @@ button.accordion {
 
 /* #endregion */
 
-/* #region MQ_Phone */
+/* MARK: MQ 430px
+ */
 
 @media only screen and (max-width: 430px) {
   body {
@@ -594,7 +599,7 @@ button.accordion {
   }
 
   footer {
-    padding: 10px 0;
+    padding: 10px 0 0 0;
   }
 
   header h1,
@@ -622,7 +627,8 @@ button.accordion {
   #social-icons img {
     width: 18px;
   }
-
+/* MARK: Hamburger
+*/
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -702,6 +708,7 @@ button.accordion {
   .footer-link img {
     /* clip: auto; */
     overflow: hidden;
+    width: auto;
   }
 
   /* footer css end */
