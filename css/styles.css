@@ -73,6 +73,7 @@ section {
 header {
   min-height: 50px;
   /* margin-bottom: 10px; */
+  text-align: center;
 }
 
 header h1 {
